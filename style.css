@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: lightgray;
+}
+
+.logoSiga {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.image-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0,  0.75);
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 28px 28px 45px -7px rgba(0,0,0,0.61);
+-moz-box-shadow: 28px 28px 45px -7px rgba(0,0,0,0.61);
+box-shadow: 28px 28px 45px -7px rgba(0,0,0,0.61);
+}
+
+.container input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    margin-bottom: 13px;
+    color: grey;
+}
+
+.image-area img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+.remember {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember input{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.checkbox {
+    width: 10%;
+}
+
+.text {
+    width: 100%;
+    font-size: 10px;
+}
+
+.text span {
+    color: lightgrey;
+    font-size: 13px;
+}
+
+
+button {
+    padding: 15px;
+    border-radius: 30px;
+    background: #e84f09;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    -webkit-box-shadow: 0px 0px 45px -1px rgba(232,79,9,0.69);
+-moz-box-shadow: 0px 0px 45px -1px rgba(232,79,9,0.69);
+box-shadow: 0px 0px 45px -1px rgba(232,79,9,0.69);
+}
+
+/* span {
+    color: white;
+} */
+
+
+/* Tentativa de resposividade */
+
+@media screen and (max-width: 1200px) {
+    .image-area {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        width: 90%;
+        height: 50%;
+    }
+}
